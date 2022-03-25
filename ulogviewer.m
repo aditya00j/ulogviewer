@@ -56,7 +56,7 @@ function ulogviewer_OpeningFcn(hObject, eventdata, handles, varargin)
 handles.output = hObject;
 
 % REPLACE this with the location of your installed ulog2csv binary
-handles.ulog2csv = '/opt/anaconda3/bin/ulog2csv';
+handles.ulog2csv = '/usr/local/bin/ulog2csv';
 
 handles.data = struct;
 handles.messages = {};
@@ -90,7 +90,7 @@ function buttonSelect_Callback(hObject, eventdata, handles)
 if file
     
     % Delete existing csv files in temp directory
-    temp_dir = [fileparts(mfilename('fullpath')) filesep 'Temporary' filesep datestr(now,'HHMMSS')];
+    temp_dir = '/Users/mch/Proj/temp';
     handles.temp_dir = temp_dir;
     
     all_files = dir(fullfile(temp_dir, '*.csv'));
