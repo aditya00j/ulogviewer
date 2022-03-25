@@ -3,7 +3,7 @@ function varargout = ulogviewer(varargin)
 %      ULOGVIEWER, by itself, creates a new ULOGVIEWER or raises the existing
 %      singleton*.
 %
-%      H = ULOGVIEWER returns the handle to a new ULOGVIEWER or the handle to
+%      H = ULOGVIEWER returns the handle to a new ULOGVIEWER or the handlo
 %      the existing singleton*.
 %
 %      ULOGVIEWER('CALLBACK',hObject,eventData,handles,...) calls the local
@@ -56,7 +56,7 @@ function ulogviewer_OpeningFcn(hObject, eventdata, handles, varargin)
 handles.output = hObject;
 
 % REPLACE this with the location of your installed ulog2csv binary
-handles.ulog2csv = '/usr/local/bin/ulog2csv';
+handles.ulog2csv = '/opt/anaconda3/bin/ulog2csv';
 
 handles.data = struct;
 handles.messages = {};
