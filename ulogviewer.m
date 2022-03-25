@@ -90,7 +90,7 @@ function buttonSelect_Callback(hObject, eventdata, handles)
 if file
     
     % Delete existing csv files in temp directory
-    temp_dir = [fileparts(mfilename('fullpath')) filesep 'Temporary' filesep datestr(now,'HHMMSS')];
+    temp_dir = [path '/temp'];
     handles.temp_dir = temp_dir;
     
     all_files = dir(fullfile(temp_dir, '*.csv'));
