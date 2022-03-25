@@ -3,7 +3,7 @@ function varargout = ulogviewer(varargin)
 %      ULOGVIEWER, by itself, creates a new ULOGVIEWER or raises the existing
 %      singleton*.
 %
-%      H = ULOGVIEWER returns the handle to a new ULOGVIEWER or the handlo
+%      H = ULOGVIEWER returns the handle to a new ULOGVIEWER or the handle to
 %      the existing singleton*.
 %
 %      ULOGVIEWER('CALLBACK',hObject,eventData,handles,...) calls the local
@@ -90,7 +90,7 @@ function buttonSelect_Callback(hObject, eventdata, handles)
 if file
     
     % Delete existing csv files in temp directory
-    temp_dir = '/Users/mch/Proj/temp';
+    temp_dir = [path '/temp'];
     handles.temp_dir = temp_dir;
     
     all_files = dir(fullfile(temp_dir, '*.csv'));
